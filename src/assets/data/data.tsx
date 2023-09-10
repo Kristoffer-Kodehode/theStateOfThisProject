@@ -13,53 +13,53 @@ const imgArray = [
   {
     imgURL: WMnt1,
     title: "Winter Mountain",
-    id: 1,
+    id: "1",
   },
   {
     imgURL: WMnt2,
     title: "Winter Mountain",
-    id: 2,
+    id: "2",
   },
   {
     imgURL: WMnt3,
     title: "Winter Mountain",
-    id: 3,
+    id: "3",
   },
   {
     imgURL: WMnt4,
     title: "Winter Mountain",
-    id: 4,
+    id: "4",
   },
   {
     imgURL: WMnt5,
     title: "Winter Mountain",
-    id: 5,
+    id: "5",
   },
   {
     imgURL: WMnt6,
     title: "Winter Mountain",
-    id: 6,
+    id: "6",
   },
   {
     imgURL: WMnt7,
     title: "Winter Mountain",
-    id: 7,
+    id: "7",
   },
   {
     imgURL: WMnt8,
     title: "Winter Mountain",
-    id: 8,
+    id: "8",
   },
   {
     imgURL: WMnt9,
     title: "Winter Mountain",
-    id: 9,
+    id: "9",
   },
   {
     imgURL: WMnt10,
     title: "Winter Mountain",
-    id: 10,
+    id: "10",
   },
 ];
 
-export { imgArray }
+export { imgArray };
