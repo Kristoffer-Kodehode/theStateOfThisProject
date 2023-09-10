@@ -1,12 +1,38 @@
-import { handleForm } from "./handleForm";
+//import { handleForm } from "./handleForm";
 
 export default function Form() {
+  function handleForm(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+
+    interface formData {
+      username: string;
+      password: string;
+    }
+
+    const formData =
+      /*new FormData(form);*/
+      {
+        username: form.username.value,
+        password: form.password.value,
+      };
+
+    console.log(formData);
+  }
+
   return (
     <div className="container">
       <form action="post" onSubmit={handleForm}>
         <h1>Create New Account:</h1>
-        <input type="text" name="username" placeholder="username" />
-        <input type="password" name="password" id="" placeholder="password" />
+        <div className="field">
+          <label htmlFor="username">username</label>
+          <input type="text" name="username" id="username" /*placeholder="username"*/ />
+        </div>
+        <div className="field">
+          <label htmlFor="password">username</label>
+          <input type="text" name="password" id="password" /*placeholder="username"*/ />
+        </div>
         <input type="submit" value="Create" />
       </form>
     </div>
