@@ -1,10 +1,9 @@
-export default function CarouselItem (properties) {
-    const { imgURL, title } = properties
+export default function CarouselItem(properties: { imgURL: string; title: string }) {
+  const { imgURL, title } = properties;
 
-
-    return (
-        <>
-            <img className="galleryImg" src={imgURL} alt={title} />
-        </>
-    )
+  return (
+    <>
+      <img className="galleryImg" src={imgURL} alt={title} />
+    </>
+  );
 }

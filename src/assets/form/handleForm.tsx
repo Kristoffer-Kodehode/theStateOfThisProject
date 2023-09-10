@@ -1,11 +1,11 @@
 function handleForm(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    const form = e.target;
-    const formData = new FormData(form);
+  const form = e.target;
+  const formData = new FormData(form);
 
-    const formJson = Object.fromEntries(formData.entries());
-    console.log(formJson);
+  const formJson = Object.fromEntries(formData.entries());
+  console.log(formJson);
 }
 
-export {handleForm}
+export { handleForm };
