@@ -11,14 +11,14 @@ export default function Form() {
       password: string;
     }
 
-    const formData =
-      /*new FormData(form);*/
-      {
-        username: form.username.value,
-        password: form.password.value,
-      };
+    const formData = new FormData(form);
+    /* {
+         username: form.username.value,
+         password: form.password.value,
+       };*/
 
-    console.log(formData);
+    const formJson = Object.fromEntries(formData.entries());
+    console.log(formJson);
   }
 
   return (
