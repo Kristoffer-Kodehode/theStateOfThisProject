@@ -4,16 +4,22 @@ import { imgArray } from "../data/data";
 export default function CarouselBase() {
   return (
     <div>
-      <button className="arrow"> &lt; </button>
+      <button className="arrow" id="left-arrow">
+        {" "}
+        &lt;{" "}
+      </button>
       {imgArray.map((img) => {
         console.log(img.imgURL);
         return (
           <div className="Carousel" key={img.id}>
-            <CarouselItem imgURL={img.imgURL} title={img.title}></CarouselItem>
+            <CarouselItem imgURL={img.imgURL} title={img.title} id={img.id}></CarouselItem>
           </div>
         );
       })}
-      <button className="arrow"> &gt; </button>
+      <button className="arrow" id="right-arrow">
+        {" "}
+        &gt;{" "}
+      </button>
     </div>
   );
 }
