@@ -9,7 +9,6 @@ export default function CarouselBase() {
         &lt;{" "}
       </button>
       {imgArray.map((img) => {
-        console.log(img.imgURL);
         return (
           <div className="Carousel" key={img.id}>
             <CarouselItem imgURL={img.imgURL} title={img.title} id={img.id}></CarouselItem>
