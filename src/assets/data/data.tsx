@@ -9,6 +9,12 @@ import WMnt8 from "../img/WinterMountainT8.png";
 import WMnt9 from "../img/WinterMountainT9.png";
 import WMnt10 from "../img/WinterMountainT10.png";
 
+interface imgArray {
+  imgURL: string;
+  title: string;
+  id: string;
+}
+
 const imgArray = [
   {
     imgURL: WMnt1,
