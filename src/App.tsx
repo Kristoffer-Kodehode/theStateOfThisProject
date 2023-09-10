@@ -19,7 +19,7 @@ function App() {
       </section>
 
       <section id="carousel-container" style={{ visibility: isLoggedIn ? "visible" : "hidden" }}>
-        <p>This is non-functional and WIP:</p> <br />
+        <p>This is not finished in the slightest...</p> <br />
         <div className="container">
           <CarouselBase></CarouselBase>
         </div>

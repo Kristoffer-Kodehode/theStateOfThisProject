@@ -1,9 +1,8 @@
-import {handleForm} from "./handleForm.tsx"
+import { handleForm } from "./handleForm";
 
 export default function Form() {
   return (
     <div className="container">
-      
       <form action="post" onSubmit={handleForm}>
         <h1>Create New Account:</h1>
         <input type="text" name="username" placeholder="username" />
