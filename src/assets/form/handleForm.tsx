@@ -1,4 +1,4 @@
-function handleForm(e) {
+function handleForm(e: Event) {
   e.preventDefault();
 
   const form = e.target;
